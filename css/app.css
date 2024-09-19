@@ -1,0 +1,61 @@
+:root {
+    --primary-color: #098af3;
+
+    --white-color: #FFFFFF;
+}
+
+.section {
+    padding: 3rem 0;
+}
+
+.heading {
+    margin: 3rem 0;
+    text-align: center;
+    font-weight: 700;
+}
+
+
+/* Cards */
+
+.grid-us {
+    margin-bottom: 3rem;
+    display: grid;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .grid-us {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.card {
+    border: none;
+    text-align: center;
+}
+
+.card:hover {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    transition: all .5s ease-in-out;
+}
+
+
+.card-icon {
+    font-size: 3.5rem;
+}
+
+
+
+/* FQA */
+
+.grid-fqa{
+    display: grid;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .grid-fqa{
+        grid-template-columns: repeat(1fr, 2fr);
+    }
+}
