@@ -1,0 +1,44 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.about {
+
+    // background: linear-gradient(to right, #6c757d, #6c757d); 
+
+    .about-grid {
+
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        gap: 2rem;
+
+        @include m.breakpoint-up(lg) {
+            grid-template-rows: unset;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .about-img {
+            background-image: url(../img/test.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .about-content {
+            max-width: 100%;
+            padding: 1rem;
+
+            @include m.breakpoint-up(md) {
+                max-width: 720px;
+            }
+
+            @include m.breakpoint-up(lg) {
+                max-width: 465px;
+            }
+
+
+            @include m.breakpoint-up(xl) {
+                max-width: 555px;
+            }
+        }
+    }
+}

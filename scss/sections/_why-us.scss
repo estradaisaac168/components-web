@@ -1,0 +1,27 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+
+.grid-why-us {
+    display: grid;
+    gap: 2rem;
+
+    @include m.breakpoint-up(md) {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+
+    .card {
+        border: none;
+
+        &-icon {
+            font-size: 3.5rem;
+        }
+
+        &:hover {
+            background: lighten(v.$secondary-color, 10%);
+            color: v.$white;
+            transition: all .3s ease-out;
+        }
+    }
+}

@@ -1,0 +1,74 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+
+// .section-container {
+//   position: relative;
+// }
+
+.hours {
+
+  .hour-grid {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    // gap: 1rem; 
+
+    @include m.breakpoint-up(lg) {
+      grid-template-rows: unset;
+      grid-template-columns: 1fr 2fr;
+    }
+
+  }
+
+
+  // .column-image {
+  //   position: relative;
+  // }
+
+  .image-background {
+    background-image: url('../img/test.jpg');
+    height: 25rem;
+    background-size: cover;
+    background-position: center;
+
+    @include m.breakpoint-up(sm) {
+      height: 20rem;
+    }
+
+    // @include m.breakpoint-up(md) {
+    //   height: 23rem;
+    // }
+
+    @include m.breakpoint-up(lg) {
+      height: 40rem;
+    }
+  }
+
+
+
+  .card {
+    border: none;
+    width: 90%;
+    height: auto;
+
+    @include m.breakpoint-up(lg) {
+      width: 70%;
+      height: auto;
+    }
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    // @include m.breakpoint-up(sm) {
+    //   top: 55%;
+    // }
+
+    // @include m.breakpoint-up(lg) {
+    //   top: 55%;
+    //   left: 45%;
+    // }
+  }
+
+}
