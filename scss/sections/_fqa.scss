@@ -1,0 +1,44 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+
+// .section-container {
+//   position: relative;
+// }
+
+.fqa {
+
+  .fqa-grid {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2rem; 
+
+    @include m.breakpoint-up(lg) {
+      grid-template-rows: unset;
+      grid-template-columns: 1fr 2fr;
+    }
+
+  }
+
+  .card{
+    border: none;
+  }
+
+  .fqa-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .btn-custom{
+    color: v.$white;
+    background-color: v.$primary-color;
+
+    &:hover{
+      background-color: v.$red;
+    }
+  }
+
+}

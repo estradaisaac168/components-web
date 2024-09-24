@@ -95,7 +95,7 @@
 
     <!-- ABOUT -->
 
-    <section class="about bg-tertiary my-5">
+    <section class="about bg-tertiary">
         <div class="about-grid">
 
             <div class="about-img"></div>
@@ -128,7 +128,7 @@
 
     <section class="section services">
         <div class="container">
-            <h2 class="heading display-2">Nuestros servicios</h2>
+            <h2 class="heading display-3">Nuestros servicios</h2>
 
             <div class="grid-container">
                 <div class="service-card service1">
@@ -162,45 +162,113 @@
 
 
     <!-- HOURS -->
-    <section class="section hours">
-        <div class="container">
-            <h2 class="heading m-0 p-5 display-4">Sobre nosotros</h2>
-            <div class="position-relative bg-primary">
-                <div class="hour-grid">
-                    <div class="text-white">
-                    </div>
-                    <div class="position-relative">
-                        <div class="image-background"></div>
-                    </div>
-                </div>
-                <div class="card shadow p-2 p-md-3 p-lg-5">
-                    <div class="card-body">
-                        <div class="card-text">
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique tenetur delectus
-                                exercitationem reiciendis rerum, consequuntur laborum laboriosam magni repellendus
-                                officia quidem rem, iste, autem maxime! Hic earum eaque accusantium unde?</p>
-                            <p>Lorem ipsum, dolor Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero,
-                                ducimus. Magnam nihil odit consectetur quos velit voluptas labore illum. Quo cumque
-                                architecto ut ad blanditiis praesentium ratione? Est, molestiae iste. sit amet
-                                consectetur adipisicing elit. Similique tenetur delectus exercitationem reiciendis
-                                rerum, consequuntur laborum laboriosam magni repellendus officia quidem rem, iste, autem
-                                maxime! Hic earum eaque accusantium unde?</p>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique tenetur delectus
-                                exercitationem reiciendis rerum, consequuntur laborum laboriosam magni repellendus
-                                officia quidem rem, iste, autem maxime! Hic earum eaque accusantium unde?</p>
-                        </div>
-                    </div>
-                </div>
+    <section class="section mt-5 hours">
+        <div class="overlay">
+            <div class="content">
+                <h2 class="heading mt-0 display-3">Emergencias 24/7</h2>
+                <button class="btn btn-red btn-lg">+(503) 2222 -2222</button>
             </div>
         </div>
     </section>
+
 
 
     <!-- TESTIMONIAL -->
 
 
     <!-- FQA -->
+    <section class="section fqa">
+        <div class="container">
+            <h2 class="heading display-3">FQA</h2>
 
+            <div class="card p-3 p-md-4 shadow">
+                <div class="fqa-grid">
+
+                    <div class="content-left">
+                        <img src="./img/test.jpg" class="img-fluid rounded" alt="">
+
+                        <div class="fqa-buttons mt-4">
+                            <p class="text-muted m-0">Tienes mas preguntas?</p>
+                            <button class="btn btn-custom">Contactanos</button>
+                        </div>
+                    </div>
+
+                    <div class="accordion" id="faqAccordion">
+                        <!-- QUESTION 1 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    ¿Cuál es el horario de atención?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Nuestro horario de atención es de lunes a viernes, de 8:00 AM a 6:00 PM. Los
+                                    fines de semana estamos cerrados.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- QUESTION 2 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    ¿Ofrecen consultas de emergencia?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Sí, ofrecemos consultas de emergencia las 24 horas del día. Puede llamarnos
+                                    o acudir directamente a nuestro hospital.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- QUESTION 3 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    ¿Aceptan seguros médicos?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Aceptamos una variedad de seguros médicos. Puede consultar con nuestro
+                                    departamento de administración para obtener más detalles.
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <!-- QUESTION 4 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    ¿Aceptan seguros médicos?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Aceptamos una variedad de seguros médicos. Puede consultar con nuestro
+                                    departamento de administración para obtener más detalles.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- GALLERY -->
 
