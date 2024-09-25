@@ -3,6 +3,22 @@
 
 
 // NAVBAR
+.navbar {
+
+    padding: 1.2rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+    .navbar-toggler {
+        box-shadow: none !important;
+        border: none;
+    }
+
+
+    .btn-custom {
+
+        width: 100%;
+    }
+}
 
 
 // END NAVBAR

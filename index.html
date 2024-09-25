@@ -24,26 +24,55 @@
 
     <!-- HEADER -->
 
-    <!-- NAVBAR TO NAVIGATE THE SECTIONS OF THE PAGE -->
+    <header class="header">
 
-
-    <!-- HERO -->
-    <section id="hero" class="hero-section d-flex align-items-center">
-        <div class="overlay"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <h1 class="hero-title text-white">Bienvenido a Nuestro Hospital</h1>
-                    <p class="hero-description text-white my-4">
-                        Brindamos atención médica de calidad y estamos comprometidos con su bienestar.
-                    </p>
-                    <a href="#services" class="btn btn-primary">Conoce Nuestros Servicios</a>
+        <!-- NAVBAR TO NAVIGATE THE SECTIONS OF THE PAGE -->
+        <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-secondary shadow">
+            <div class="container">
+                <a class="navbar-brand" href="#">Hospital</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <a href="#" class="btn btn-custom text-white btn-lg btn-red" type="button">Emergencias</a>
+                    </form>
                 </div>
             </div>
-        </div>
-    </section>
+        </nav>
+        <div class="scroll-watcher"></div>
 
 
+        <!-- HERO -->
+        <section id="hero" class="hero-section d-flex align-items-center">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h1 class="hero-title display-1 text-white">Bienvenido a Nuestro Hospital</h1>
+                        <p class="hero-description text-white my-4">
+                            Brindamos atención médica de calidad y estamos comprometidos con su bienestar.
+                        </p>
+                        <a href="#services" class="btn btn-lg btn-primary text-white">Conoce Nuestros Servicios</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </header>
 
     <!-- WHY-US -->
     <section class="section why-us bg-grey">
@@ -51,56 +80,70 @@
 
             <h2 class="heading display-2">Why us?</h2>
 
-            <div class="grid-why-us mb-5">
+            <p class="lead text-muted text-center m-auto w-75">
+                Brindamos atención médica de calidad, con tecnología avanzada y un equipo
+                experto comprometidos con tu salud y bienestar.
+            </p>
 
-                <div class="card p-5 p-md-3 p-lg-4 p-xl-5 shadow d-flex flex-column align-items-center">
+            <div class="grid-why-us my-5">
 
-                    <i class="bi bi-airplane card-icon"></i>
+                <div class="card p-5 p-md-3 p-lg-3 p-xl-4 shadow d-flex flex-column align-items-center">
+
+                    <i class="bi bi-heart-pulse card-icon"></i>
 
                     <div class="card-body">
 
                         <div class="card-title">
-                            <h3 class="text-center">Titulo</h3>
+                            <h3 class="text-center">Atención de Calidad</h3>
                         </div>
 
-                        <p class="card-text text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                            Praesentium
-                            veritatis et beatae explicabo nihil! Consequuntur, omnis placeat! Fugiat architecto nulla
-                            provident.</p>
+                        <p class="card-text text-center">Cuidamos de nuestros pacientes con un enfoque humanizado y
+                            profesional.</p>
                     </div>
                 </div>
 
-                <div class="card p-5 p-md-3 p-lg-4 p-xl-5 shadow d-flex flex-column align-items-center">
+                <div class="card p-5 p-md-3 p-lg-3 p-xl-4 shadow d-flex flex-column align-items-center">
 
-                    <i class="bi bi-airplane card-icon"></i>
+                    <i class="bi bi-laptop-fill card-icon"></i>
 
                     <div class="card-body">
 
                         <div class="card-title">
-                            <h3 class="text-center">Titulo</h3>
+                            <h3 class="text-center">Tecnología Avanzada</h3>
                         </div>
 
-                        <p class="card-text text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                            Praesentium
-                            veritatis et beatae explicabo nihil! Consequuntur, omnis placeat! Fugiat architecto nulla
-                            provident.</p>
+                        <p class="card-text text-center">Equipos de última generación para diagnósticos precisos y
+                            rápidos.</p>
                     </div>
                 </div>
 
-                <div class="card p-5 p-md-3 p-lg-4 p-xl-5 shadow d-flex flex-column align-items-center">
+                <div class="card p-5 p-md-3 p-lg-3 p-xl-4 shadow d-flex flex-column align-items-center">
 
-                    <i class="bi bi-airplane card-icon"></i>
+                    <i class="bi bi-person-check-fill card-icon"></i>
 
                     <div class="card-body">
 
                         <div class="card-title">
-                            <h3 class="text-center">Titulo</h3>
+                            <h3 class="text-center">Equipo Experto</h3>
                         </div>
 
-                        <p class="card-text text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                            Praesentium
-                            veritatis et beatae explicabo nihil! Consequuntur, omnis placeat! Fugiat architecto nulla
-                            provident.</p>
+                        <p class="card-text text-center">Profesionales altamente capacitados comprometidos con tu
+                            bienestar.</p>
+                    </div>
+                </div>
+
+                <div class="card p-5 p-md-3 p-lg-3 p-xl-4 shadow d-flex flex-column align-items-center">
+
+                    <i class="bi bi-shield-fill card-icon"></i>
+
+                    <div class="card-body">
+
+                        <div class="card-title">
+                            <h3 class="text-center">Compromiso y Salud</h3>
+                        </div>
+
+                        <p class="card-text text-center">Nos dedicamos a brindar un ambiente seguro y de confianza para
+                            todos nuestros pacientes.</p>
                     </div>
                 </div>
             </div>
@@ -117,22 +160,19 @@
 
             <div class="about-content text-white mx-auto m-lg-0">
 
-                <h3 class="heading text-start display-4">Nosotros</h3>
+                <h3 class="heading about-title text-start display-4">Nosotros</h3>
 
                 <div class="about-text mb-5">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis eos saepe porro autem, a unde
-                        accusamus, ad reiciendis corporis, reprehenderit harum libero consequatur vitae doloribus
-                        incidunt recusandae minima ipsa error.</p>
+                    <p>En [Nombre del Hospital], nuestra misión es brindar atención médica de calidad, centrada en el
+                        paciente, con un enfoque humano y profesional. Con más de [X años] de experiencia, nos hemos
+                        consolidado como un centro de salud de referencia, ofreciendo una amplia gama de servicios
+                        médicos que abarcan desde atención primaria hasta especialidades avanzadas.</p>
 
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis eos saepe porro autem, a unde
-                        accusamus, ad reiciendis corporis, reprehenderit harum libero consequatur vitae doloribus
-                        incidunt recusandae minima ipsa error. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                        Nobis eos saepe porro autem, a unde Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                        Nobis eos saepe porro autem, a unde
-                        accusamus, ad reiciendis corporis, reprehenderit harum libero consequatur vitae doloribus
-                        incidunt recusandae minima ipsa error.
-                        accusamus, ad reiciendis corporis, reprehenderit harum libero consequatur vitae doloribus
-                        incidunt recusandae minima ipsa error.</p>
+                    <p>Nuestro equipo está formado por profesionales altamente capacitados, comprometidos con el
+                        bienestar de cada paciente. Creemos en la innovación y la tecnología como herramientas
+                        fundamentales para garantizar diagnósticos precisos y tratamientos efectivos. Además, nuestras
+                        instalaciones están diseñadas para ofrecer comodidad y seguridad a nuestros pacientes y sus
+                        familias.</p>
                 </div>
             </div>
         </div>
@@ -199,7 +239,7 @@
                 <div class="fqa-grid">
 
                     <div class="content-left">
-                        <img src="./img/test.jpg" class="img-fluid rounded" alt="">
+                        <img src="./img/fqa.jpg" class="img-fluid rounded" alt="">
 
                         <div class="fqa-buttons mt-4">
                             <p class="text-muted m-0">Tienes mas preguntas?</p>
@@ -295,31 +335,31 @@
                 </div>
                 <!-- IMAGE 2 -->
                 <div class="gallery-item">
-                    <img src="./img/test.jpg" alt="Gallery Image 2" class="img-fluid">
+                    <img src="./img/test2.jpg" alt="Gallery Image 2" class="img-fluid">
                 </div>
                 <!-- IMAGE 3 -->
                 <div class="gallery-item">
-                    <img src="./img/test.jpg" alt="Gallery Image 3" class="img-fluid">
+                    <img src="./img/test3.jpg" alt="Gallery Image 3" class="img-fluid">
                 </div>
                 <!-- IMAGE 4 -->
                 <div class="gallery-item">
-                    <img src="./img/test.jpg" alt="Gallery Image 4" class="img-fluid">
+                    <img src="./img/test4.jpg" alt="Gallery Image 4" class="img-fluid">
                 </div>
                 <!-- IMAGE 5 -->
                 <div class="gallery-item">
-                    <img src="./img/test.jpg" alt="Gallery Image 5" class="img-fluid">
+                    <img src="./img/test5.jpg" alt="Gallery Image 5" class="img-fluid">
                 </div>
                 <!-- IMAGE 6 -->
                 <div class="gallery-item">
-                    <img src="./img/test.jpg" alt="Gallery Image 6" class="img-fluid">
+                    <img src="./img/test2.jpg" alt="Gallery Image 6" class="img-fluid">
                 </div>
                 <!-- IMAGE 7 -->
                 <div class="gallery-item">
-                    <img src="./img/test.jpg" alt="Gallery Image 7" class="img-fluid">
+                    <img src="./img/test3.jpg" alt="Gallery Image 7" class="img-fluid">
                 </div>
                 <!-- IMAGE 8 -->
                 <div class="gallery-item">
-                    <img src="./img/test.jpg" alt="Gallery Image 8" class="img-fluid">
+                    <img src="./img/test4.jpg" alt="Gallery Image 8" class="img-fluid">
                 </div>
             </div>
         </div>
