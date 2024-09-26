@@ -13,9 +13,16 @@
         border: none;
     }
 
+    .dropdown-menu{
+        animation: .5s slideup;
+    }
+
+    @keyframes slideup {
+        from{ transform: translateY(10%); }
+        to{ transform: translateY(0%); }
+    }
 
     .btn-custom {
-
         width: 100%;
     }
 }

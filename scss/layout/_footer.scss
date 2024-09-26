@@ -1,0 +1,84 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+
+.footer {
+
+    background-color: #f8f9fa;
+
+    .footer-grid {
+        display: grid;
+        gap: 2rem;
+
+        @include m.breakpoint-up(md) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    .footer-column {
+        h5 {
+            font-size: 1.6rem;
+            color: v.$primary-color;
+            /* PRIMARY COLOR FOR HEADINGS */
+            margin-bottom: 1rem;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+
+            li {
+                margin-bottom: 0.5rem;
+
+                a {
+                    text-decoration: none;
+                    color: v.$secondary-color;
+                    /* SECONDARY COLOR FOR LINKS */
+                    transition: color 0.3s ease;
+
+                    &:hover {
+                        color: darken(v.$secondary-color, 15%);
+                        /* DARKEN LINK ON HOVER */
+                    }
+                }
+            }
+        }
+
+        p {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            color: v.$grey;
+        }
+
+        a {
+            color: v.$secondary-color;
+            text-decoration: none;
+            transition: color 0.3s ease;
+
+            &:hover {
+                color: darken(v.$secondary-color, 15%);
+            }
+        }
+    }
+
+    .footer-pay {
+        p {
+            font-size: 1rem; 
+            margin-right: 0.5rem;
+            color: v.$secondary-color; 
+        }
+    }
+
+    .footer-copyright {
+        width: 100%;
+        background-color: darken(#f8f9fa, 20%);
+        padding: 1rem 0;
+        text-align: center;
+
+        p {
+            margin: 0;
+            font-size: 1.2rem;
+            color: v.$white;
+        }
+    }
+}

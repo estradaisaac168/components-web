@@ -43,8 +43,19 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">Link</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled">Disabled</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
                         </li>
                     </ul>
                     <form class="d-flex">
@@ -53,6 +64,7 @@
                 </div>
             </div>
         </nav>
+
         <div class="scroll-watcher"></div>
 
 
@@ -158,9 +170,9 @@
 
             <div class="about-img"></div>
 
-            <div class="about-content text-white mx-auto m-lg-0">
+            <div class="about-content text-white">
 
-                <h3 class="heading about-title text-start display-4">Nosotros</h3>
+                <h2 class="heading about-title text-start display-4">Nosotros</h2>
 
                 <div class="about-text mb-5">
                     <p>En [Nombre del Hospital], nuestra misión es brindar atención médica de calidad, centrada en el
@@ -182,41 +194,100 @@
     <!-- SERVICES -->
     <section class="section services">
         <div class="container">
-            <h2 class="heading display-3">Nuestros servicios</h2>
+            <h2 class="heading display-3">Nuestros Servicios</h2>
 
-            <div class="grid-container">
-                <div class="service-card service1">
-                    <div class="service-overlay">
-                        <h4>Servicio 1</h4>
-                        <p>Descripción breve del servicio 1 que ofrecemoDescripción breve Descripción breve del servicio
-                            1 que ofrecemodel servicio 1 que ofrecemos.</p>
+            <p class="lead text-muted text-center m-auto w-75">
+                Nuestros servicios están diseñados para brindarte atención médica de calidad, combinando tecnología
+                avanzada con un equipo especializado comprometido con tu bienestar.
+            </p>
+
+
+            <div class="grid-services mt-5">
+
+                <div class="card shadow">
+                    <div class="image-container">
+                        <img src="./img/service1.jpg" class="img-fluid" alt="Servicio 1">
+                        <h5 class="card-title">Emergencias 24/7</h5>
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <p class="card-text flex-grow-1">Atención inmediata para situaciones críticas, disponible las 24
+                            horas del día, los 7 días de la semana.</p>
+                        <a href="#" class="btn d-block text-white btn-primary">Leer más</a>
                     </div>
                 </div>
-                <div class="service-card service2">
-                    <div class="service-overlay">
-                        <h4>Servicio 2</h4>
-                        <p>Descripción breve del servicio 2 que ofrecemos.</p>
+
+
+                <div class="card shadow">
+                    <div class="image-container">
+                        <img src="./img/service2.jpg" class="img-fluid" alt="Servicio 2">
+                        <h5 class="card-title">Consulta Externa</h5>
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <p class="card-text flex-grow-1">Diagnóstico y tratamiento personalizado para diversas
+                            especialidades médicas.</p>
+                        <a href="#" class="btn d-block text-white btn-primary">Leer más</a>
                     </div>
                 </div>
-                <div class="service-card service3">
-                    <div class="service-overlay">
-                        <h4>Servicio 3</h4>
-                        <p>Descripción breve del servicio 3 que ofrecemos.</p>
+
+
+                <div class="card shadow">
+                    <div class="image-container">
+                        <img src="./img/service3.jpg" class="img-fluid" alt="Servicio 3">
+                        <h5 class="card-title">Laboratorio Clínico</h5>
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <p class="card-text flex-grow-1">Pruebas de diagnóstico con tecnología avanzada y resultados
+                            rápidos y precisos.</p>
+                        <a href="#" class="btn d-block text-white btn-primary">Leer más</a>
                     </div>
                 </div>
-                <div class="service-card service4">
-                    <div class="service-overlay">
-                        <h4>Servicio 4</h4>
-                        <p>Descripción breve del servicio 4 que ofrecemos.</p>
+
+                <div class="card shadow">
+                    <div class="image-container">
+                        <img src="./img/service4.jpg" class="img-fluid" alt="Servicio 3">
+                        <h5 class="card-title">Laboratorio Clínico</h5>
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <p class="card-text flex-grow-1">Pruebas de diagnóstico con tecnología avanzada y resultados
+                            rápidos y precisos.</p>
+                        <a href="#" class="btn d-block text-white btn-primary">Leer más</a>
                     </div>
                 </div>
+
+
+                <div class="card shadow">
+                    <div class="image-container">
+                        <img src="./img/service5.jpg" class="img-fluid" alt="Servicio 3">
+                        <h5 class="card-title">Cirugía General</h5>
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <p class="card-text flex-grow-1">Intervenciones quirúrgicas seguras y con los mejores
+                            especialistas.</p>
+                        <a href="#" class="btn d-block text-white btn-primary">Leer más</a>
+                    </div>
+                </div>
+
+
+                <div class="card shadow">
+                    <div class="image-container">
+                        <img src="./img/service3.jpg" class="img-fluid" alt="Servicio 3">
+                        <h5 class="card-title">Pediatría</h5>
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <p class="card-text flex-grow-1">Atención médica integral para niños y adolescentes.</p>
+                        <a href="#" class="btn d-block text-white btn-primary">Leer más</a>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
 
 
+
+
     <!-- HOURS -->
-    <section class="section mt-5 hours">
+    <section class="section hours mt-5">
         <div class="overlay">
             <div class="content">
                 <h2 class="heading mt-0 display-3">Emergencias 24/7</h2>
@@ -232,16 +303,16 @@
 
     <!-- FQA -->
     <section class="section fqa">
-        <div class="container">
+        <div class="container-lg">
             <h2 class="heading display-3">FQA</h2>
 
-            <div class="card p-3 p-md-4 shadow">
+            <div class="card p-3 p-lg-4 shadow">
                 <div class="fqa-grid">
 
                     <div class="content-left">
                         <img src="./img/fqa.jpg" class="img-fluid rounded" alt="">
 
-                        <div class="fqa-buttons mt-4">
+                        <div class="fqa-buttons my-3">
                             <p class="text-muted m-0">Tienes mas preguntas?</p>
                             <button class="btn btn-custom">Contactanos</button>
                         </div>
@@ -325,10 +396,15 @@
     </section>
 
     <!-- GALLERY -->
-    <section id="gallery" class="section gallery-section">
+    <section class="section gallery">
         <div class="container">
             <h2 class="heading display-2">Nuestras instalaciones</h2>
-            <div class="gallery-grid">
+
+            <p class="lead text-muted text-center m-auto w-75">Nuestras instalaciones están equipadas con tecnología de
+                vanguardia y un ambiente cómodo y seguro, diseñado para ofrecerte la mejor experiencia en atención
+                médica.</p>
+
+            <div class="gallery-grid mt-5">
                 <!-- IMAGE 1 -->
                 <div class="gallery-item">
                     <img src="./img/test.jpg" alt="Gallery Image 1" class="img-fluid">
@@ -371,6 +447,46 @@
 
 
     <!-- FOOTER -->
+    <footer class="footer mt-5">
+        <div class="container">
+            <div class="footer-content p-5">
+                <div class="footer-grid">
+                    <div class="footer-column">
+                        <h5>Redes Sociales</h5>
+                        <ul class="social-links">
+                            <li><a href="#"><i class="bi bi-facebook"></i> Facebook</a></li>
+                            <li><a href="#"><i class="bi bi-twitter"></i> Twitter</a></li>
+                            <li><a href="#"><i class="bi bi-instagram"></i> Instagram</a></li>
+                            <li><a href="#"><i class="bi bi-linkedin"></i> LinkedIn</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h5>Enlaces Útiles</h5>
+                        <ul class="useful-links">
+                            <li><a href="#">Sobre Nosotros</a></li>
+                            <li><a href="#">Servicios</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Política de Privacidad</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h5> Formas de Pago</h5>
+                        <div class="footer-pay d-flex flex-column">
+                            <p><i class="bi bi-credit-card"></i> Visa</p>
+                            <p><i class="bi bi-credit-card"></i> MasterCard</p>
+                            <p><i class="bi bi-paypal"></i> PayPal</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            <p>&copy; 2024 Hospital XYZ. Todos los derechos reservados.</p>
+        </div>
+    </footer>
 
 
     <!-- BOOTSTRAP JS -->

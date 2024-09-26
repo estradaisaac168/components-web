@@ -2,67 +2,42 @@
 @use '../base/mixins' as m;
 
 
-.grid-container {
-    display: grid;
-    gap: 2rem;
+.services {
 
-    @include m.breakpoint-up(md) {
-        grid-template-columns: repeat(2, 1fr);
+    .grid-services {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 2rem;
+
+        .card {
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            border: none;
+
+            .image-container {
+                position: relative;
+
+                img {
+                    transition: transform 0.3s ease;
+                    opacity: 0.9;
+
+                    &:hover {
+                        transform: scale(1.05);
+                    }
+                }
+            }
+
+            .card-title {
+                position: absolute;
+                top: 20px;
+                left: 20px;
+                color: #fff;
+                background-color: rgba(0, 0, 0, 0.5);
+                padding: 5px 10px;
+                border-radius: 5px;
+            }
+
+        }
     }
-
-    @include m.breakpoint-up(lg) {
-        grid-template-columns: repeat(4, 1fr);
-        gap: 1rem;
-    }
-
-    @include m.breakpoint-up(lg) {
-        grid-template-columns: repeat(4, 1fr);
-        gap: 1.5rem;
-    }
-}
-
-.service-card {
-    position: relative;
-    min-height: 300px;
-    background-size: cover;
-    background-position: center;
-    overflow: hidden;
-    border-radius: 8px;
-}
-
-.service1 {
-    background-image: url('../img/service1.jpg');
-}
-
-.service2 {
-    background-image: url('../img/service2.jpg');
-}
-
-.service3 {
-    background-image: url('../img/service3.jpg');
-}
-
-.service4 {
-    background-image: url('../img/service4.jpg');
-}
-
-.service-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(108, 117, 125, .8);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    padding: 1rem;
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-
-.service-card:hover .service-overlay {
-    opacity: 1;
 }

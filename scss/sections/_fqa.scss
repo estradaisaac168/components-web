@@ -8,36 +8,52 @@
 
 .fqa {
 
-  .fqa-grid {
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    gap: 2rem; 
-
-    @include m.breakpoint-up(lg) {
-      grid-template-rows: unset;
-      grid-template-columns: 1fr 2fr;
-    }
-
-  }
-
-  .card{
+  .card {
     border: none;
-  }
 
-  .fqa-buttons{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 1rem;
-    align-items: center;
-  }
+    .fqa-grid {
+      display: grid;
+      // grid-template-rows: repeat(2, 1fr);
+      gap: 1.5rem;
 
-  .btn-custom{
-    color: v.$white;
-    background-color: v.$secondary-color;
+      @include m.breakpoint-up(md) {
+        // grid-template-rows: unset;
+        grid-template-columns: 1fr 2fr;
+      }
 
-    &:hover{
-      background-color: v.$red;
+      .fqa-buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 1rem;
+        align-items: center;
+
+        @include m.breakpoint-up(md) {
+          flex-direction: column;
+        }
+
+        @include m.breakpoint-up(lg) {
+          flex-direction: row;
+        }
+      }
+
+      .btn-custom {
+        color: v.$white;
+        background-color: v.$secondary-color;
+
+        @include m.breakpoint-up(md) {
+          width: 100%;
+        }
+
+        @include m.breakpoint-up(lg) {
+          width: auto;
+        }
+
+        &:hover {
+          background-color: v.$red;
+        }
+      }
+
     }
   }
 
