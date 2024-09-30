@@ -1,0 +1,91 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.testimonials {
+  margin-top: 6rem;
+    padding: 1rem;
+
+    .swiper{
+      max-width: 600px;
+      border-radius: 0.5rem;
+
+    }
+
+    .swiper-wrapper{
+      min-height: 100%;
+      
+    }
+  
+    // .swiper-container {
+    //   max-width: 600px; // MAX WIDTH FOR THE SLIDER
+    //   margin: 0 auto;
+    // }
+  
+    .testimonial {
+      // position: relative;
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      padding: 2rem;
+      background-color: v.$grey;
+      // border-radius: 0.5rem;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  
+      .quote-icon {
+        // position: absolute;
+        // top: 1rem;
+        // left: 1rem;
+        align-self: flex-start;
+        color: #ccc; // GRAY COLOR FOR THE QUOTE ICON
+        font-size: 5rem; // ICON SIZE
+        // flex-grow: 1;
+      }
+  
+      .comment {
+        font-size: 1.6rem;
+        padding-top: 1rem;
+        text-align: center;
+        color: #333;
+        font-style: italic;
+        margin-bottom: 1rem;
+        flex-grow: 2;
+      }
+  
+      .client-name {
+        font-size: 1.4rem;
+        font-weight: bold;
+        // flex-grow: 1;
+        color: #555;
+      }
+    }
+  
+    // SWIPER NAVIGATION BUTTONS
+    .swiper-button-next,
+    .swiper-button-prev {
+      background-color: rgba(0, 0, 0, 0.3);
+      border-radius: 50%;
+      padding: 1rem;
+      width: 2.5rem;
+      height: 2.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+  
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+    }
+  
+    .swiper-button-next {
+      right: 10px;
+    }
+  
+    .swiper-button-prev {
+      left: 10px;
+    }
+  }
+  
